@@ -1,10 +1,19 @@
+const config = require('config');
 const express = require('express');
 const Joi = require('joi');
+const helmet = require('helmet');
+const morgan = require('morgan');
 
 const app = express();
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(helmet());
 
+// Log only if dev environment
+if (app.get('env') === 'development') {
+  app.use(morgan('tiny'));
+}
 /*
   @movies list
   :title
@@ -76,4 +85,6 @@ function validate(movie) {
   return Joi.validate(movie, schema);
 }
 
-app.listen(5000);
+app.listen(config.get('port'), () => {
+  console.log(`Application: ${config.get('name')}. Running in port ${config.get('port')}`)
+});
