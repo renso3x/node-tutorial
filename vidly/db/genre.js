@@ -19,5 +19,6 @@ function validateGenre(movie) {
 
 module.exports = {
   Genre: Genre,
-  validate: validateGenre,
+  genreSchema: schema,
+  validateGenre: validateGenre,
 };
