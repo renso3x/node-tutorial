@@ -1,14 +1,4 @@
-const config = require('config');
-const express = require('express');
-const helmet = require('helmet');
-const morgan = require('morgan');
 const mongoose = require('mongoose');
-const moviesRouter = require('./routes/movies');
-const app = express();
-
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(helmet());
 
 // connect
 mongoose.connect('mongodb://localhost/mongo-excercises', {
@@ -70,7 +60,7 @@ async function displayQuery() {
 
 displayQuery();
 
-query first before update
+// query first before update
 async function updateCourse(id) {
   const course = await Course.findById(id);
   if (!course) return;
@@ -104,13 +94,3 @@ async function deleteCourse(id) {
 }
 
 deleteCourse('5a68fdf95db93f6477053ddd');
-
-// Log only if dev environment
-if (app.get('env') === 'development') {
-  app.use(morgan('tiny'));
-}
-
-app.listen(config.get('port'), () => {
-  console.log(`Application: ${config.get('name')}. Running in port ${config.get('port')}`);
-  console.log(`App Password: ${config.get('password')}`)
-});

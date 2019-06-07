@@ -2,7 +2,12 @@ const config = require('config');
 const express = require('express');
 const helmet = require('helmet');
 const morgan = require('morgan');
+
+require('./db/connection');
+
 const moviesRouter = require('./routes/movies');
+const genreRouter = require('./routes/genre');
+const customerRouter = require('./routes/customer');
 const app = express();
 
 app.use(express.json());
@@ -11,6 +16,8 @@ app.use(helmet());
 
 // Routes
 app.use('/api/movies', moviesRouter);
+app.use('/api/genre', genreRouter);
+app.use('/api/customers', customerRouter);
 
 // Log only if dev environment
 if (app.get('env') === 'development') {
