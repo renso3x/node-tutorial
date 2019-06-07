@@ -8,6 +8,7 @@ require('./db/connection');
 const genreRouter = require('./routes/genre');
 const customerRouter = require('./routes/customer');
 const moviesRouter = require('./routes/movie');
+const rentalRouter = require('./routes/rental');
 const app = express();
 
 app.use(express.json());
@@ -18,6 +19,7 @@ app.use(helmet());
 app.use('/api/genre', genreRouter);
 app.use('/api/customers', customerRouter);
 app.use('/api/movies', moviesRouter);
+app.use('/api/rentals', rentalRouter);
 
 // Log only if dev environment
 if (app.get('env') === 'development') {
