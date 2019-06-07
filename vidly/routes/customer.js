@@ -1,24 +1,14 @@
 const express = require('express');
-const Joi = require('joi');
 
-const Customer = require('../db/customer');
-
-function validate(customer) {
-  const schema = {
-    name: Joi.string().min(3).required(),
-    isGold: Joi.boolean(),
-    phone: Joi.string().regex(/\d{3}-\d{3}-\d{4}/)
-  };
-
-  return Joi.validate(customer, schema);
-}
+const { Customer, validate } = require('../db/customer');
+const { isValidId } = require('../middleware/customer');
 
 // returns a Router Object
 const router = express.Router();
 
 // REST API
 router.get('/', async (req, res) => {
-  const customers = await Customer.find();
+  const customers = await Customer.find().sort('name');
   res.send(customers);
 });
 
@@ -38,19 +28,22 @@ router.post('/', async (req, res) => {
   res.send(customer);
 });
 
-router.get('/:id', async (req, res) => {
+router.get('/:id', isValidId, async (req, res) => {
   const customer = await Customer.findById(req.params.id);
 
-  if (!customer) res.status(404).send("Sorry we cannot find the customer you're looking for");
-
+  if (!customer) {
+    res.status(404).send("Sorry we cannot find the customer you're looking for.");
+  }
   res.send(customer);
 });
 
-router.put('/:id', async (req, res) => {
+router.put('/:id', isValidId, async (req, res) => {
   const { error } = validate(req.body);
+
   if (error) {
     res.status(400).send(error.details);
   }
+
   const customer = await Customer.findByIdAndUpdate(req.params.id, {
     name: req.body.name,
     isGold: req.body.isGold,
@@ -63,7 +56,7 @@ router.put('/:id', async (req, res) => {
   res.send(customer);
 });
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', isValidId, async (req, res) => {
   const customer = await Customer.findByIdAndRemove(req.params.id);
 
   if (!customer)

@@ -5,7 +5,6 @@ const morgan = require('morgan');
 
 require('./db/connection');
 
-const moviesRouter = require('./routes/movies');
 const genreRouter = require('./routes/genre');
 const customerRouter = require('./routes/customer');
 const app = express();
@@ -15,7 +14,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(helmet());
 
 // Routes
-app.use('/api/movies', moviesRouter);
 app.use('/api/genre', genreRouter);
 app.use('/api/customers', customerRouter);
 
