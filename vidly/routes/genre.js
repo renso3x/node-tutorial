@@ -1,5 +1,6 @@
 const express = require('express');
-const { Genre, validate } = require('../db/genre');
+const auth = require('../middleware/auth');
+const { Genre, validateGenre } = require('../db/genre');
 const { isValidId } = require('../middleware/genre');
 
 // returns a Router Object
@@ -11,8 +12,8 @@ router.get('/', async (req, res) => {
   res.send(genres);
 });
 
-router.post('/', async (req, res) => {
-  const { error } = validate(req.body);
+router.post('/', auth, async (req, res) => {
+  const { error } = validateGenre(req.body);
   if (error) {
     res.status(500).send(error.details);
   }
@@ -32,7 +33,7 @@ router.get('/:id', isValidId, async (req, res) => {
 });
 
 router.put('/:id', isValidId, async (req, res) => {
-  const { error } = validate(req.body);
+  const { error } = validateGenre(req.body);
   if (error) {
     res.status(400).send(error.details);
   }
