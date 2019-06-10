@@ -31,9 +31,9 @@ function validateUser(user) {
     email: Joi.string().min(10).max(255).required().email(),
     password: Joi.string().min(8).max(1024).required()
   };
+
   return Joi.validate(user, schema);
 }
-
 
 exports.User = User;
 exports.validateUser = validateUser;

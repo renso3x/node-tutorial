@@ -1,3 +1,5 @@
+const bcrpyt = require('bcrypt');
+const _ = require('lodash');
 const express = require('express');
 const { User, validateUser } = require('../db/user');
 
@@ -15,14 +17,12 @@ router.post('/', async (req, res) => {
     res.status(400).send('User already registered.');
   }
 
-  user = new User({
-    name: req.body.name,
-    email: req.body.email,
-    password: req.body.password
-  });
-  user = await user.save();
+  user = new User(_.pick(req.body, ['name', 'email', 'password']));
+  const salt = await bcrpyt.genSalt(10);;
+  user.password = await bcrpyt.hash(user.password, salt);
+  await user.save();
 
-  res.send(user);
+  res.send(_.pick(user, ['_id', 'name', 'email']));
 });
 
 module.exports = router;
