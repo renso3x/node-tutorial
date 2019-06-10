@@ -18,7 +18,7 @@ router.post('/', async (req, res) => {
   }
 
   user = new User(_.pick(req.body, ['name', 'email', 'password']));
-  const salt = await bcrpyt.genSalt(10);;
+  const salt = await bcrpyt.genSalt(10);
   user.password = await bcrpyt.hash(user.password, salt);
   await user.save();
 
