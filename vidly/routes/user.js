@@ -22,7 +22,12 @@ router.post('/', async (req, res) => {
   user.password = await bcrpyt.hash(user.password, salt);
   await user.save();
 
-  res.send(_.pick(user, ['_id', 'name', 'email']));
+  // send the auth token
+  token = user.generateAuthToken();
+
+  res
+    .header('x-auth-token', token)
+    .send(_.pick(user, ['_id', 'name', 'email']));
 });
 
 module.exports = router;
