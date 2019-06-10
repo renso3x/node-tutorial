@@ -1,5 +1,6 @@
 const express = require('express');
 const auth = require('../middleware/auth');
+const admin = require('../middleware/admin');
 const { Genre, validateGenre } = require('../db/genre');
 const { isValidId } = require('../middleware/genre');
 
@@ -47,8 +48,8 @@ router.put('/:id', isValidId, async (req, res) => {
   res.send(genre);
 });
 
-router.delete('/:id', isValidId, async (req, res) => {
-  const genre = await Genre.findOneAndRemove(req.params.id);
+router.delete('/:id', [auth, admin, isValidId], async (req, res) => {
+  const genre = await Genre.findByIdAndRemove(req.params.id);
 
   if (!genre)
     return res.status(404).send("Sorry we cannot find the genre you're looking for");
