@@ -1,10 +1,18 @@
 const bcrpyt = require('bcrypt');
 const _ = require('lodash');
 const express = require('express');
+
+const auth = require('../middleware/auth');
 const { User, validateUser } = require('../db/user');
 
 // returns a Router Object
 const router = express.Router();
+
+router.get('/me', auth, async (req, res) => {
+  //get user object in req.user
+  const user = await User.findById(req.user._id).select('-password');
+  res.send(user);
+})
 
 router.post('/', async (req, res) => {
   const { error } = validateUser(req.body);
