@@ -1,7 +1,17 @@
+require('express-async-errors');
 const config = require('config');
 const express = require('express');
 const helmet = require('helmet');
 const morgan = require('morgan');
+const winston = require('winston');
+
+// add logger file
+winston.add(new winston.transports.File({
+  filename: 'errors.log',
+  level: 'error'
+}));
+
+const errors = require('./middleware/errors');
 
 if (!config.get('jwtPrivateKey')) {
   console.error('FATAL ERROR: jwtPrivateKey is not defined');
@@ -29,6 +39,7 @@ app.use('/api/movies', moviesRouter);
 app.use('/api/rentals', rentalRouter);
 app.use('/api/users', userRouter);
 app.use('/api/auth', authRouter);
+app.use(errors);
 
 // Log only if dev environment
 if (app.get('env') === 'development') {
