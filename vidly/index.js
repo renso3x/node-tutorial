@@ -9,6 +9,7 @@ require('./startup/middleware')(app);
 require('./startup/route')(app);
 
 const port = process.env.PORT || 8001;
+
 app.listen(port, () => {
   winston.info(`Application is running in port ${port}`);
 });
