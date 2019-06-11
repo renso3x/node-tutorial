@@ -86,3 +86,228 @@
 {"message":"You are now connected to mongodb","level":"info"}
 {"message":"Application is running in port 5000","level":"info"}
 {"message":"You are now connected to mongodb","level":"info"}
+{"error":{},"level":"error","message":"uncaughtException: [object Object]\nError: [object Object]\n    at module.exports (/Users/romeoenso/Desktop/Sites/works/node/vidly/startup/config.js:5:11)\n    at Object.<anonymous> (/Users/romeoenso/Desktop/Sites/works/node/vidly/index.js:7:28)\n    at Module._compile (internal/modules/cjs/loader.js:702:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:713:10)\n    at Module.load (internal/modules/cjs/loader.js:612:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:551:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:543:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:744:10)\n    at startup (internal/bootstrap/node.js:240:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:564:3)","stack":"Error: [object Object]\n    at module.exports (/Users/romeoenso/Desktop/Sites/works/node/vidly/startup/config.js:5:11)\n    at Object.<anonymous> (/Users/romeoenso/Desktop/Sites/works/node/vidly/index.js:7:28)\n    at Module._compile (internal/modules/cjs/loader.js:702:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:713:10)\n    at Module.load (internal/modules/cjs/loader.js:612:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:551:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:543:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:744:10)\n    at startup (internal/bootstrap/node.js:240:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:564:3)","exception":true,"date":"Tue Jun 11 2019 14:38:29 GMT+0800 (Philippine Standard Time)","process":{"pid":82900,"uid":501,"gid":20,"cwd":"/Users/romeoenso/Desktop/Sites/works/node/vidly","execPath":"/usr/local/Cellar/node/10.5.0_1/bin/node","version":"v10.5.0","argv":["/usr/local/Cellar/node/10.5.0_1/bin/node","/Users/romeoenso/Desktop/Sites/works/node/vidly/index.js"],"memoryUsage":{"rss":43708416,"heapTotal":33325056,"heapUsed":17373128,"external":19020698}},"os":{"loadavg":[2.740234375,2.599609375,2.47119140625],"uptime":709314},"trace":[{"column":11,"file":"/Users/romeoenso/Desktop/Sites/works/node/vidly/startup/config.js","function":"module.exports","line":5,"method":"exports","native":false},{"column":28,"file":"/Users/romeoenso/Desktop/Sites/works/node/vidly/index.js","function":null,"line":7,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":702,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":713,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":612,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":551,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":543,"method":"_load","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":744,"method":"runMain","native":false},{"column":19,"file":"internal/bootstrap/node.js","function":"startup","line":240,"method":null,"native":false},{"column":3,"file":"internal/bootstrap/node.js","function":"bootstrapNodeJSCore","line":564,"method":null,"native":false}]}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"errors":{"name":{"message":"Path `name` (`12`) is shorter than the minimum allowed length (3).","name":"ValidatorError","properties":{"minlength":3,"type":"minlength","message":"Path `{PATH}` (`{VALUE}`) is shorter than the minimum allowed length (3).","path":"name","value":"12"},"kind":"minlength","path":"name","value":"12"}},"message":"Genre validation failedGenre validation failed","name":"ValidationError","level":"error","stack":"ValidationError: Genre validation failed\n    at new ValidationError (/Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/error/validation.js:23:11)\n    at model.Object.<anonymous>.Document.invalidate (/Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/document.js:1485:32)\n    at /Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/document.js:1361:17\n    at validate (/Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/schematype.js:705:7)\n    at /Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/schematype.js:742:9\n    at Array.forEach (<anonymous>)\n    at SchemaString.Object.<anonymous>.SchemaType.doValidate (/Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/schematype.js:710:19)\n    at /Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/document.js:1359:9\n    at process._tickCallback (internal/process/next_tick.js:61:11)"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"errors":{"name":{"message":"Path `name` (`aa`) is shorter than the minimum allowed length (3).","name":"ValidatorError","properties":{"minlength":3,"type":"minlength","message":"Path `{PATH}` (`{VALUE}`) is shorter than the minimum allowed length (3).","path":"name","value":"aa"},"kind":"minlength","path":"name","value":"aa"}},"message":"Genre validation failedGenre validation failed","name":"ValidationError","level":"error","stack":"ValidationError: Genre validation failed\n    at new ValidationError (/Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/error/validation.js:23:11)\n    at model.Object.<anonymous>.Document.invalidate (/Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/document.js:1485:32)\n    at /Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/document.js:1361:17\n    at validate (/Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/schematype.js:705:7)\n    at /Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/schematype.js:742:9\n    at Array.forEach (<anonymous>)\n    at SchemaString.Object.<anonymous>.SchemaType.doValidate (/Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/schematype.js:710:19)\n    at /Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/document.js:1359:9\n    at process._tickCallback (internal/process/next_tick.js:61:11)"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"errors":{"name":{"message":"Path `name` (`aa`) is shorter than the minimum allowed length (3).","name":"ValidatorError","properties":{"minlength":3,"type":"minlength","message":"Path `{PATH}` (`{VALUE}`) is shorter than the minimum allowed length (3).","path":"name","value":"aa"},"kind":"minlength","path":"name","value":"aa"}},"message":"Genre validation failedGenre validation failed","name":"ValidationError","level":"error","stack":"ValidationError: Genre validation failed\n    at new ValidationError (/Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/error/validation.js:23:11)\n    at model.Object.<anonymous>.Document.invalidate (/Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/document.js:1485:32)\n    at /Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/document.js:1361:17\n    at validate (/Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/schematype.js:705:7)\n    at /Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/schematype.js:742:9\n    at Array.forEach (<anonymous>)\n    at SchemaString.Object.<anonymous>.SchemaType.doValidate (/Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/schematype.js:710:19)\n    at /Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/document.js:1359:9\n    at process._tickCallback (internal/process/next_tick.js:61:11)"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"errors":{"name":{"message":"Path `name` (`aa`) is shorter than the minimum allowed length (3).","name":"ValidatorError","properties":{"minlength":3,"type":"minlength","message":"Path `{PATH}` (`{VALUE}`) is shorter than the minimum allowed length (3).","path":"name","value":"aa"},"kind":"minlength","path":"name","value":"aa"}},"message":"Genre validation failedGenre validation failed","name":"ValidationError","level":"error","stack":"ValidationError: Genre validation failed\n    at new ValidationError (/Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/error/validation.js:23:11)\n    at model.Object.<anonymous>.Document.invalidate (/Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/document.js:1485:32)\n    at /Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/document.js:1361:17\n    at validate (/Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/schematype.js:705:7)\n    at /Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/schematype.js:742:9\n    at Array.forEach (<anonymous>)\n    at SchemaString.Object.<anonymous>.SchemaType.doValidate (/Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/schematype.js:710:19)\n    at /Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/document.js:1359:9\n    at process._tickCallback (internal/process/next_tick.js:61:11)"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"errors":{"name":{"message":"Path `name` (`aa`) is shorter than the minimum allowed length (3).","name":"ValidatorError","properties":{"minlength":3,"type":"minlength","message":"Path `{PATH}` (`{VALUE}`) is shorter than the minimum allowed length (3).","path":"name","value":"aa"},"kind":"minlength","path":"name","value":"aa"}},"message":"Genre validation failedGenre validation failed","name":"ValidationError","level":"error","stack":"ValidationError: Genre validation failed\n    at new ValidationError (/Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/error/validation.js:23:11)\n    at model.Object.<anonymous>.Document.invalidate (/Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/document.js:1485:32)\n    at /Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/document.js:1361:17\n    at validate (/Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/schematype.js:705:7)\n    at /Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/schematype.js:742:9\n    at Array.forEach (<anonymous>)\n    at SchemaString.Object.<anonymous>.SchemaType.doValidate (/Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/schematype.js:710:19)\n    at /Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/mongoose/lib/document.js:1359:9\n    at process._tickCallback (internal/process/next_tick.js:61:11)"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"level":"error","message":"Cannot set headers after they are sent to the clientCannot set headers after they are sent to the client","stack":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (_http_outgoing.js:471:11)\n    at ServerResponse.header (/Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/express/lib/response.js:771:10)\n    at ServerResponse.send (/Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/express/lib/response.js:170:12)\n    at send (/Users/romeoenso/Desktop/Sites/works/node/vidly/routes/genre.js:33:7)"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"level":"error","message":"Cannot set headers after they are sent to the clientCannot set headers after they are sent to the client","stack":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (_http_outgoing.js:471:11)\n    at ServerResponse.header (/Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/express/lib/response.js:771:10)\n    at ServerResponse.send (/Users/romeoenso/Desktop/Sites/works/node/vidly/node_modules/express/lib/response.js:170:12)\n    at send (/Users/romeoenso/Desktop/Sites/works/node/vidly/routes/genre.js:33:7)"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
+{"message":"Application is running in port 8001","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly_test","level":"info"}
