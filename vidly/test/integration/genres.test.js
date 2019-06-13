@@ -2,15 +2,15 @@ const request = require('supertest');
 const { User } = require('../../db/user');
 const { Genre } = require('../../db/genre');
 
-let server;
 describe('/api/genres', () => {
+  let server;
   // GET THE SERVER
   beforeEach(() => server = require('../../index'));
   afterEach(async () => {
+    // MUST CLOSE THE SERVER IN EACH TEST
+    await server.close();
     // remove all the collection
     await Genre.remove({});
-    // MUST CLOSE THE SERVER IN EACH TEST
-    server.close();
   });
 
 

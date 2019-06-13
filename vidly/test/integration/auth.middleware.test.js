@@ -2,16 +2,17 @@ const request = require('supertest');
 const { User } = require('../../db/user');
 const { Genre } = require('../../db/genre');
 
-let server;
 describe('/auth/middleware', () => {
-  // GET THE SERVER
-  beforeEach(() => server = require('../../index'));
-  afterEach(async () => {
-    await Genre.remove({});
-    // MUST CLOSE THE SERVER IN EACH TEST
-    server.close();
-  });
+  let server;
   let token;
+  beforeEach(() => {
+    server = require('../../index');
+    token = new User().generateAuthToken();
+  });
+  afterEach(async () => {
+    await server.close();
+    await Genre.remove({});
+  });
   const exec = () => {
     return request(server)
       .post('/api/genre')
@@ -19,9 +20,6 @@ describe('/auth/middleware', () => {
       .send({ name: 'genre2' });
   };
 
-  beforeEach(() => {
-    token = new User().generateAuthToken();
-  });
 
   it('should return 401 if no token', async () => {
     token = '';
