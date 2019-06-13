@@ -9,10 +9,10 @@ describe('/api/genres', () => {
   afterEach(async () => {
     // remove all the collection
     await Genre.remove({});
-
     // MUST CLOSE THE SERVER IN EACH TEST
     server.close();
   });
+
 
   describe('GET / ', () => {
     it('should return all genres', async () => {
@@ -34,6 +34,18 @@ describe('/api/genres', () => {
   });
 
   describe('GET /:id ', () => {
+    it('should return 400 if invalid id', async () => {
+      const res = await request(server).get(`/api/genre/123`);
+
+      expect(res.status).toBe(400);
+    });
+
+    it('should return 404 if not genre is found', async () => {
+      const res = await request(server).get(`/api/genre/5cfdec2c3db1b3ff67632eb6`);
+
+      expect(res.status).toBe(404);
+    })
+
     it('should return a genre given by an id', async () => {
       const genre = new Genre({ name: 'genre1' });
       await genre.save();
@@ -44,11 +56,6 @@ describe('/api/genres', () => {
       expect(res.body).toHaveProperty('name', genre.name);
     });
 
-    it('should return 404 if invalid id', async () => {
-      const res = await request(server).get(`/api/genre/123`);
-
-      expect(res.status).toBe(404);
-    });
   });
 
   describe('POST /', () => {
@@ -113,6 +120,105 @@ describe('/api/genres', () => {
       expect(res.body).toHaveProperty('_id');
       expect(res.body).toHaveProperty('name');
     });
-
   });
+
+  describe('PUT /:id', () => {
+    it('should return 400 if invalid id', async () => {
+      const res = await request(server).put(`/api/genre/123`);
+
+      expect(res.status).toBe(400);
+    });
+
+    it('should return 401 if not logged in', async () => {
+      const genre = new Genre({ name: 'genre1' });
+      await genre.save();
+
+      const res = await request(server)
+        .put(`/api/genre/${genre._id}`)
+
+      expect(res.status).toBe(401);
+    });
+
+    it('should return 404 if genre is not found', async () => {
+      //generate a jwt token
+      const token = new User().generateAuthToken();
+
+      const res = await request(server)
+        .put(`/api/genre/5cfdec2c3db1b3ff67632eb6`)
+        .set('x-auth-token', token);
+
+      expect(res.status).toBe(404);
+    });
+
+    it('should return 200 if it valid ', async () => {
+      const genre = new Genre({ name: 'genre1' });
+      await genre.save();
+
+      //generate a jwt token
+      const token = new User().generateAuthToken();
+
+      const res = await request(server)
+        .put(`/api/genre/${genre._id}`)
+        .send({ name: 'genre2' })
+        .set('x-auth-token', token);
+
+      expect(res.status).toBe(200);
+    });
+  });
+
+
+  describe('DELETE /:id', () => {
+    it('should return 401 if not logged in', async () => {
+      const genre = new Genre({ name: 'genre1' });
+      await genre.save();
+
+      const res = await request(server)
+        .delete(`/api/genre/${genre._id}`)
+
+      expect(res.status).toBe(401);
+    });
+    it('should return 403 if user is not admin', async () => {
+      //generate a jwt token
+      const token = new User().generateAuthToken();
+      const res = await request(server)
+        .delete(`/api/genre/5cfdec2c3db1b3ff67632eb6`)
+        .set('x-auth-token', token);
+
+      expect(res.status).toBe(403);
+    });
+
+    it('should return 400 if invalid id', async () => {
+      //generate a jwt token
+      const token = new User({ isAdmin: true }).generateAuthToken();
+      const res = await request(server)
+        .delete(`/api/genre/123`)
+        .set('x-auth-token', token)
+
+      expect(res.status).toBe(400);
+    });
+
+    it('should return 404 genre is not found given an id', async () => {
+      //generate a jwt token
+      const token = new User({ isAdmin: true }).generateAuthToken();
+      const res = await request(server)
+        .delete(`/api/genre/5cfdec2c3db1b3ff67632eb6`)
+        .set('x-auth-token', token)
+
+      expect(res.status).toBe(404);
+    });
+
+    it('should return 200 if valid', async () => {
+      const genre = new Genre({ name: 'genre1' });
+      await genre.save();
+      //generate a jwt token
+      const token = new User({ isAdmin: true }).generateAuthToken();
+
+      const res = await request(server)
+        .delete(`/api/genre/${genre._id}`)
+        .set('x-auth-token', token)
+
+      expect(res.status).toBe(200);
+    });
+  });
+
 });

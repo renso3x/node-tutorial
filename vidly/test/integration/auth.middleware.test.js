@@ -7,6 +7,7 @@ describe('/auth/middleware', () => {
   // GET THE SERVER
   beforeEach(() => server = require('../../index'));
   afterEach(async () => {
+    await Genre.remove({});
     // MUST CLOSE THE SERVER IN EACH TEST
     server.close();
   });

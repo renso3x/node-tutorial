@@ -28,22 +28,22 @@ router.post('/', auth, async (req, res) => {
 router.get('/:id', isValidId, async (req, res) => {
   const genre = await Genre.findById(req.params.id);
 
-  if (!genre) res.status(404).send("Sorry we cannot find the movie you're looking for");
+  if (!genre) {
+    return res.status(404).send("Sorry we cannot find the movie you're looking for");
+  }
 
   res.send(genre);
 });
 
-router.put('/:id', isValidId, async (req, res) => {
+router.put('/:id', [isValidId, auth], async (req, res) => {
   const { error } = validateGenre(req.body);
   if (error) {
-    res.status(400).send(error.details);
+    return res.status(404).send(error.details);
   }
+
   const genre = await Genre.findByIdAndUpdate(req.params.id, {
     name: req.body.name
   }, { new: true });
-
-  if (!genre)
-    return res.status(404).send("Sorry we cannot find the genre you're looking for");
 
   res.send(genre);
 });
